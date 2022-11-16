@@ -1,0 +1,14 @@
+
+-- Before insert 
+select * from Raw_Material;
+
+LOAD DATA INFILE 'F:/CSV files/Raw_Material.csv'
+INTO TABLE Raw_Material
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+ 
+--After insert 
+select * from Raw_Material;
